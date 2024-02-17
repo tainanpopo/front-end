@@ -1,0 +1,27 @@
+<!-- 告訴瀏覽器文件的型態 -->
+<!DOCTYPE html>
+<html>
+    <!-- 網頁的附加資訊 -->
+    <head>
+        <!-- 附加資訊，告訴瀏覽器，設定網頁的編碼是 utf-8 -->
+        <meta charset="utf-8" />
+        <title>CSS Box Model 區塊模型</title>
+    </head>
+    <!-- 網頁的主畫面，都寫在 body 標籤中 -->
+    <body style="background-color: #cccccc;">
+        <div style="color: #666;text-decoration: underline;">灰色+底線</div>
+        <!-- 外邊距 下-->
+        <div style="margin-bottom:10px;font-weight: bold;font-size: 24px;">文字粗體+放大</div>
+        <!-- 內邊距、單實線邊框-->
+        <!-- 預設寬度會和父標籤等寬-->
+        <!-- 區塊高度隨內容縮放，裡面放多少東西就會多高，若要設定須小心-->
+        <!-- 這些設定都只能設定在 div 區塊模式（block）的標籤上-->
+        <div style="width: 400px; padding: 10px;border: 1px solid blue;color: #666;">
+            今天<span style="color: red;">天氣</span>真是不錯
+            <!-- 黃色區塊寬度跟隨父標籤-->
+            <div style="background-color: yellow;">跟隨父標籤</div>
+        </div>
+        <!-- 黃色區塊寬度跟隨父標籤，寫在這就會跟隨 body 標籤-->
+        <div style="background-color: yellow;">跟隨 body 標籤</div>
+    </body>
+</html>
